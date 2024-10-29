@@ -1,0 +1,837 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+ body{background-color: whitesmoke;
+   font-family: sans-serif;
+ }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 15vh;
+  align-items: center;
+  padding: 0% 100px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 30px;
+}
+
+/* ......................................Hero Section................................  */
+
+main {
+  display: flex;
+  background-color: whitesmoke;
+  height: 85vh;
+}
+
+.heroBg {
+  /* background-image: url("./images/landing.png");
+  background-size: cover;
+  background-position: center; */
+  width: 50%;
+}
+
+.heroBg img {
+  height: 100%;
+  width: 100%;
+}
+
+.heroText {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.heroText h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.heroText span {
+  font-size: 20px;
+}
+
+.heroText button {
+  background-color: rgb(20, 19, 19);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.discover{
+  border-left: 3px solid red;
+  margin:  10vh 20vw;
+  padding-left: 20px;
+
+}
+
+/*.............d woman man pictures.......*/
+.dis{
+  display: flex;
+    height: 100vh;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 25px;
+}
+
+.column{display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  align-items: center;gap: 10px;
+}
+.women{background-image: url(./images/woman.png);
+  background-size: contain;
+  flex: 2;
+  background-position: center;
+  background-repeat: no-repeat;   
+  box-shadow: 1px 1px 1px 1px grey;
+  background-color: white;
+}
+.men{background-image: url(./images/man.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  box-shadow: 1px 1px 1px 1px gray;
+  width: 30vw;height: 40vh;
+  background-color: white;
+  padding: 20px;
+}
+.shoe{background-image: url(./images/shoes.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex: 1;
+  box-shadow: 1px 1px 1px 1px gray;
+  width: 30vw;
+  background-color: white;
+  padding: 20px;
+  
+}
+.label{align-items: center;
+  justify-content: center;
+}
+.label {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+  margin: 100px 10px;
+  text-align: center;
+}
+.label:hover{background-color: black;
+  color: white;
+}
+.label span{font-size: 0.6em;}
+#label{margin: 150px 10px;}
+
+.dis h2{padding: 10px;}
+
+.product {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 25px;
+  padding-right: -10px
+}
+
+.product div {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+
+.product img{
+  width: 35vw; height: 50vh;
+  background-color: white;
+}
+p i{color: gold;}
+
+
+.most-rated {
+    font-size: 30px; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+
+.most-rated::after {
+    content: "";
+    width: 70px; /* Adjust the width of the underline */
+    height: 5px; /* Adjust the thickness of the underline */
+    background-color: red;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px; /* Adjust distance from the text */
+}
+
+.rated{align-self: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 20px;
+  gap:3vw  ;
+  
+}
+.rated img{width: 33vw;height: 50vh;
+  background-color: white;
+}
+.rated div{width: 33vw;}
+.summer{background-color: grey;
+  display: flex;
+  width: 100vw;
+  padding: 0px 100px 0px 25px;
+}
+.heroText{display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-top: 20px;
+  margin-top: 100px
+}
+
+.heroText h1 {
+  font-size: 60px;
+  font-weight: 900;
+}
+
+.heroText span {
+  font-size: 20px;
+}
+
+.heroText button {
+  background-color: rgb(20, 19, 19);
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 10px;
+}
+.summer img{width: 40vw;
+  height: fit-content;
+  margin: 25px 25px 0px 25px;
+}
+
+.sec {
+
+  height: 70vh;
+
+  margin-top: -10px;
+
+}
+
+
+.promo {
+
+  display: flex;
+
+  justify-content: space-evenly;
+
+  flex-wrap: nowrap;
+
+  margin: 100px;
+
+}
+
+
+.promo h5 {
+
+  line-height: 2;
+
+  font-weight: 500;
+
+  font-size: 1rem;
+
+  color: #212529;
+
+  padding: 12px 0px;
+
+}
+
+
+.promo1 h5 {
+
+  margin-left: -50px;
+
+  font-weight: 550;
+
+  font-size: 15px;
+
+  margin-bottom: -4px;
+
+  color: #212529;
+
+}
+
+
+.promo1 img {
+
+  border-radius: 5px;
+
+  margin-left: -50px;
+
+}
+
+
+.promo1 p {
+
+  line-height: 1.5;
+
+  margin-top: 1rem;
+
+  margin-left: -50px;
+
+}
+
+
+.link h5 {
+
+  margin-left: 28px;
+
+  font-weight: 550;
+
+  font-size: 15px;
+
+  margin-bottom: -6px;
+
+  color: #212529;
+
+}
+
+
+.link1 {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  gap: 35px;
+
+  margin-left: 28px;
+
+}
+
+
+.link1 div p {
+
+  line-height: 1.5;
+
+  padding: 12px 0px;
+
+  font-size: 14.5px;
+
+  text-align: left;
+
+  color: gray;
+
+  margin-top: -7px;
+
+}
+
+
+.info h5 {
+
+  margin-left: 7px;
+
+  font-weight: 550;
+
+  font-size: 15px;
+
+  margin-bottom: -4px;
+
+  margin-top: -7px;
+
+  color: #212529;
+
+}
+
+
+.info1 {
+
+  display: flex;
+
+  gap: 10px;
+
+  line-height: 4.5;
+
+}
+
+
+.info1 i {
+
+  color: #DC3545;
+
+  margin-left: 7px;
+
+  margin-top: -15px;
+
+  font-size: 16px;
+
+}
+
+
+.info1 p {
+
+  color: #494444;
+
+  margin-top: 9px;
+
+}
+
+
+.sub {
+
+  margin-top: 2.5rem;
+
+  font-size: small;
+
+}
+
+
+.sub p {
+
+  margin-left: 7px;
+
+}
+
+
+.promo .sub p {
+
+  font-size: 14.5px;
+
+  color: #212529;
+
+  margin-bottom: 7px;
+
+}
+
+
+.sub1 {
+
+  position: relative;
+
+  display: inline-block;
+
+  padding: 10px 0px;
+
+}
+
+
+.sub1 input {
+
+  padding: 16px;
+
+  padding-right: 165px;
+
+  border: 1px solid #DEE2E6;
+
+  border-radius: 4px;
+
+  outline: none;
+
+  margin-left: 7px;
+
+}
+
+
+.sub1:hover input {
+
+  border: 1px solid red;
+
+}
+
+
+.sub1 button {
+
+  position: absolute;
+
+  right: 5px;
+
+  top: 50%;
+
+  border: none;
+
+  transform: translateY(-50%);
+
+  background-color: #DC3545;
+
+  color: white;
+
+  font-size: 14px;
+
+  height: 6vh;
+
+  width: 4.5vw;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+}
+
+/*
+/* .........................footer......................... 
+
+
+#footer {
+
+  height: 6.5vh;
+
+}
+
+
+#footer p {
+
+  margin-top: 50px;
+
+  margin-bottom: -50px;
+
+  color: #6C757D;
+
+  text-align: center;
+
+  font-size: 15.5px;
+
+  letter-spacing: 0.5px;
+
+  word-spacing: 1px;
+
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+  }
+
+
+  header img {
+
+    width: 25vw;
+
+  }
+
+
+  header nav {
+
+    display: none;
+
+  }
+
+
+  .headerIcons {
+
+    display: none;
+
+  }
+
+
+  .menuIcon {
+
+    display: block;
+
+    font-size: 20px;
+
+    outline: none;
+
+    padding: 5px 5px;
+
+    border-color: rgba(0, 0, 0, 0.1);
+
+    text-decoration: none;
+
+    border: 1px solid transparent;
+
+    border-radius: 2px;
+
+  }
+
+
+  .menuIcon:hover {
+
+    background-color: black;
+
+    color: white;
+
+    cursor: pointer;
+
+  }
+
+
+  main {
+
+    background-color: #444242;
+
+    background-image: url(./images/landing.png);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+
+  .heroBg {
+
+    display: none;
+
+  }
+
+
+  .heroText span {
+
+    color: white;
+
+    font-size: 14px;
+
+  }
+
+
+  .heroText h1 {
+
+    color: white;
+
+    font-size: 32px;
+
+    font-weight: 1000;
+
+  }
+
+
+  .discover {
+
+    padding: 45px 20px;
+
+  }
+
+
+  .discover h4,
+
+  .container h4 {
+
+    font-size: 26px;
+
+    font-weight: medium;
+
+    color: rgb(33, 37, 41);
+
+    text-align: left;
+
+  }
+
+
+  .collections {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    height: 100%;
+
+  }
+
+
+  .image1 .btn {
+
+    top: 43%;
+
+    left: 33%;
+
+  }
+
+
+  .image2 .btn,
+
+  .image3 .btn {
+
+    top: 36%;
+
+    left: 32%;
+
+  }
+
+
+  .container {
+
+    padding: 45px;
+
+  }
+
+
+  .popular,
+
+  .popular1 {
+
+    flex-direction: column;
+
+    padding: 15px;
+
+    gap: 15px;
+
+    margin: auto;
+
+    justify-content: start;
+
+    align-items: start;
+
+    height: fit-content;
+
+  }
+
+
+  .brownShoe,
+
+  .blueShoe,
+
+  .denimJacket,
+
+  .leatherBag,
+
+  .smoothCloth,
+
+  .yellowJacket {
+
+    width: 80vw;
+
+    height: 70vh;
+
+  }
+
+
+  .most h4 {
+
+    font-size: 1.55rem;
+
+  }
+
+
+  .rated {
+
+    flex-direction: column;
+
+  }
+
+
+  .shoe {
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+  }
+
+
+  .shoes {
+
+    display: none;
+
+  }
+
+
+  .newShoes span {
+
+    font-size: 12px;
+
+    /* padding-bottom: 15px; */
+
+    /* font-weight: bold; */
+
+ /* }
+
+
+  .newShoes h4 {
+
+    font-size: 41px;
+
+  }
+
+
+  .promo {
+
+    display: flex;
+
+    flex-direction: column;
+
+  }
+
+
+  .link {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0px;
+
+    padding: 0px;
+
+  }
+
+
+  .sub1 {
+
+    width: 100%;
+
+  }
+
+
+  .sub1 button {
+
+    width: 15%;
+
+    position: absolute;
+
+    right: 40px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+  }
+
+}*/
+
